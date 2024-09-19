@@ -6,9 +6,9 @@ def candles(height: list[int]) -> int:
     Returns:
         int: The number of candles that are tallest
     """
-
+    
     # max_height = max(height)  # Encuentra la altura máxima de forma directa pero se utilizara el ciclo for para ejemplificar el D-F y PS
-
+    
     if not height:
         return 0  # Maneja el caso donde la lista está vacía
 
@@ -16,24 +16,25 @@ def candles(height: list[int]) -> int:
     for h in height:  # Recorre cada altura en la lista
         if h > max_height:
             max_height = h  # Actualiza max_height si se encuentra un valor mayor
-
+    
     count_max_height = 0      # Inicializa el contador
-
+    
     for h in height:
         if h == max_height:
             count_max_height += 1
-
-    # count_max_height = height.count(max_height): esta linea sustituiria el ciclo for 
+    
     # count_max_height = height.count(max_height): esta linea sustituiria el ciclo segundo ciclo for 
-
+    
     return count_max_height  # Regresa el contador
     
     """
     Codigo ejemplificado con un solo ciclo for
     if not height:
         return 0  # Maneja el caso donde la lista está vacía
+
     max_height = height[0]  # Inicializa max_height con el primer elemento
     count_max_height = 0  # Inicializa el contador
+
     for h in height:  # Un solo ciclo que encuentra la altura máxima y cuenta
         if h > max_height:
             max_height = h  # Actualiza max_height si encuentra un valor mayor

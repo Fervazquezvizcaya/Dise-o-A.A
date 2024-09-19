@@ -1,5 +1,6 @@
 def suma_pares_matriz(matriz):
     suma_pares = 0
+
     for fila in matriz:
         for elemento in fila:
             if elemento % 2 == 0:  # Verifica si el número es par
