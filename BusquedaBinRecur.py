@@ -1,10 +1,11 @@
 
-def InicioFin(A, ele):
+def InicioFin(A, ele,):
     # Un arreglo A de elementos ordenados
     # El inicio y el fin de un arreglo A 
     inicio = 0
     fin = 0
-    for ele in A:
+    i=0
+    for _ in A:
         fin += 1
     fin -= 1 
     
@@ -46,23 +47,23 @@ if __name__ == "__main__":
 
     A5 = [5, 10, 15, 20, 25, 30, 35]
     ele5 = 35
-    resultado5 = InicioFin(A5, ele5)
-    print(resultado5)  # 6
+    resultado6 = InicioFin(A5, ele5)
+    print(resultado6)  # 6
 
     A6 = []
     ele6 = 6
-    resultado5 = InicioFin(A6, ele6)
-    print(resultado5)  # -1
+    resultado7 = InicioFin(A6, ele6)
+    print(resultado7)  # -1
 
     A7 = [0]
-    ele7 = 1
-    resultado5 = InicioFin(A7, ele7)
-    print(resultado5)  # -1
+    ele7 = 5
+    resultado8 = InicioFin(A7, ele7)
+    print(resultado8)  # -1
 
     A8 = [0]
     ele8 = 0
-    resultado5 = InicioFin(A8, ele8)
-    print(resultado5)  # 0
+    resultado9 = InicioFin(A8, ele8)
+    print(resultado9)  # 0
 
 """
     Codigo optimizado
